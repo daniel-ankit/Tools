@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #091921;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heading{
+    font-family: 'Lobster', cursive;
+    color: aliceblue;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#heading.active{
+    color: rgb(70, 70, 70);
+}
+
+
+.container.active{
+    background-color: #dbe2e6;
+    color: black;
+    font-weight: 600;
+}
+
+.calender{
+    width: 45rem;
+    height: 52rem;
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius: 25px;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.397);
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color: rgba(9, 9, 206, 0.836);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.253);
+}
+
+.month.active{
+    background-color: rgb(18, 171, 209);
+    color: aliceblue;
+}
+
+.month i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p{
+    font-size: 1.6rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.151);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.4rem/7);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    transition: 0.2s;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.144);
+}
+
+.days div:hover:not(.today){
+    background-color: rgba(48, 90, 226, 0.61);
+    border: rgb(168, 168, 168) solid 1px;
+    cursor: pointer;
+}
+
+.prev-date, .next-date{
+    opacity: 0.5;
+}
+
+.today{
+    background-color: rgb(44, 47, 243);
+    color: aliceblue;
+}
+
+.today.active{
+    background-color: rgb(18, 171, 209);
+}
+
+#toggle{
+    margin: 1.5rem;
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background: #03090c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#toggle.active{
+    background-color: rgb(121, 121, 121);
+}
+
+#toggle .ball{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(56, 56, 56), rgb(0, 0, 0));
+    transform: scale(0.9);
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.2),
+                inset 0 2px 2px hsla(0, 0%, 100%, 0.2),
+                inset 0 -2px 2px hsla(0, 0%, 100%, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.active .ball{
+    left: 40px;
+    background: linear-gradient(to bottom, rgb(223, 221, 221), rgb(124, 124, 124));
+}

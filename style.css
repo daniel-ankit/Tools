@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #091921;
+    color: aliceblue;
+}
+
+body.active{
+    background-color: #dbe2e6;
+    color: black;
+}
+
+#toggle{
+    margin: 1.5rem;
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background: #03090c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#toggle.active{
+    background-color: rgb(121, 121, 121);
+}
+
+#toggle .ball{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(56, 56, 56), rgb(0, 0, 0));
+    transform: scale(0.9);
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.2),
+                inset 0 2px 2px hsla(0, 0%, 100%, 0.2),
+                inset 0 -2px 2px hsla(0, 0%, 100%, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.active .ball{
+    left: 40px;
+    background: linear-gradient(to bottom, rgb(223, 221, 221), rgb(124, 124, 124));
+}
+
+.heading{
+    font-size: 4rem;
+    text-transform:uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heading:hover{
+    color: grey;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.item{
+    margin: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 15px;
+    transition: 0.6s;
+    width: 150px;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.item a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.item a.active{
+    color: black;
+}
+
+.item a i{
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+i.active{
+    color: black;
+}

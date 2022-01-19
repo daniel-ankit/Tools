@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div id="heading"><u>Calender</u></div>
+        <div class="calender" id="calender">
+            <div class="month" id="month">
+                <i class="fa fa-chevron-left prev" id="prev"></i>
+                <div class="date" id="date">
+                    <h1 id="mn"></h1>
+                    <p id="dy"></p>
+                </div>
+                <i class="fa fa-chevron-right next" id="next"></i>
+            </div>
+            <div class="weekdays" id="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days" id="days">
+            </div>
+        </div>
+        <div id="toggle">
+            <i class="ball"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

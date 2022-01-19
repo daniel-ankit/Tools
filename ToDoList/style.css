@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #091921;
+    transform: 0.5s;
+}
+
+body.active{
+    background-color: #dbe2e6;
+    color: black;
+    font-weight: 600;
+}
+
+.container{
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    width: 35%;
+    min-width: 450px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 15px 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.425);
+    border-radius: 15px;
+}
+
+#heading{
+    text-align: center;
+}
+
+#heading u{
+    font-family: 'Lobster', cursive;
+    color: aliceblue;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+#heading u.active{
+    color: rgb(70, 70, 70);
+}
+
+#newtask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#newtask input{
+    width: 90%;
+    height: 45px;
+    font-size: 15px;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px;
+}
+
+#newtask button{
+    width: 54px;
+    height: 50px;
+    float: right;
+    padding: 5px;
+    margin-left: 15px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 50%;
+}
+
+#newtask button i{
+    font-size: 2rem;
+}
+
+.task{
+    background-color: rgb(0, 6, 95);
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid gray;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+.delete{
+    border: 1px solid grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+}
