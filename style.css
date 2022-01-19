@@ -31,7 +31,7 @@ body.active{
 
 #head p{
     text-align: center;
-    font-size: 1.1rem;
+    padding: 0 3rem;
 }
 
 .navbar{
@@ -42,9 +42,11 @@ body.active{
     padding-left: 1rem;
 }
 
-#title{
-    font-size: 4rem;
-    font-family: 'Lobster', cursive;
+.navbar img{
+    height: 110px;
+    width: 110px;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
 }
 
 #toggle{
@@ -86,7 +88,6 @@ body.active{
 .heading{
     font-size: 2.6rem;
     text-align: center;
-    cursor: pointer;
     font-family: 'Lobster', cursive;
     text-decoration: underline;
 }

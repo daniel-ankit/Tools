@@ -33,15 +33,16 @@ body.active{
     align-items: center;
 }
 
-h1{
+#h1{
     font-family: 'Lobster', cursive;
     color: aliceblue;
     font-size: 3rem;
     text-align: center;
+    text-decoration: underline;
     margin-bottom: 1rem;
 }
 
-h1.active{
+#h1.active{
     color: rgb(54, 54, 54)
 }
 

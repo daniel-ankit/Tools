@@ -1,5 +1,5 @@
 const click = new Audio();
-click.src = "../click.mp3";
+click.src = "click.mp3";
 
 const body = document.querySelector('body');
 const a = document.querySelectorAll('a');
@@ -7,7 +7,7 @@ const a = document.querySelectorAll('a');
 toggle.addEventListener("click", ()=>{
     toggle.classList.toggle('active');
     body.classList.toggle('active');
-    for(var i=0; i<15; i++){
+    for(var i=0; i<11; i++){
         a[i].classList.toggle('active');
     }
     click.play();
