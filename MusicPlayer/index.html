@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="main">
+        <div class="container">
+            <h2 class="title">SONG NAME</h2>
+            <h3 class="artist">Singer</h3>
+            <div class="image">
+                <img src="./images/001.jpg" alt="">
+            </div>
+            <audio src="./music/Aasman Ko Chukar - Hanuman Returns 128 Kbps.mp3"></audio>
+            <div class="controls">
+                <i class="fa-solid fa-backward-step" id="prev" title="Prev"></i>
+                <i class="fa-solid fa-play" id="play" title="Play"></i>
+                <i class="fa-solid fa-pause"></i>
+                <i class="fa-solid fa-forward-step" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
